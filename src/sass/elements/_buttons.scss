@@ -1,0 +1,18 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    height: 60px;
+    background: rgb(141, 199, 61);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 20px;
+    border: 3px solid rgb(141, 199, 61);
+    text-decoration: none;
+    transition: all .15s ease-in-out;
+    &:hover {
+        background: transparent;
+        color: rgb(141, 199, 61);
+    }
+}

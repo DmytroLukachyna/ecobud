@@ -1,0 +1,46 @@
+.calculate {
+    padding-top: 70px;
+    &__wrapper {
+        &-main {
+            display: flex;
+            /* flex-wrap: wrap; */
+        }
+        &-text {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 30px;
+            padding-top: 80px;
+        }
+        &-inner {
+            display: flex;
+            padding-top: 40px;
+        }
+    }
+    &__title {
+        max-width: 610px;
+    }
+    &__picture {
+        width: 40%;
+        position: relative;
+        z-index: 1;
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 30px;
+        color: rgb(120, 123, 133);
+        width: 447px;
+        position: relative;
+        right: 20px;
+        margin-top: 40px;
+    }
+    &__phone {
+        position: relative;
+        right: 80px;
+        z-index: 1;
+    }
+    &__btn {
+        position: relative;
+        right: 20px;
+        margin-top: 35px;
+    }
+}
