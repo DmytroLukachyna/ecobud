@@ -153,7 +153,7 @@ $(document).ready(function() {
             setTimeout(function() {
                 $('.thanks').fadeOut('slow');
             }, 2500);
-            // dataLayer.push({ 'event': $(this).parent().closest('.modal').attr('id') });
+
         });
     });
     $('.modal__form_2').submit(function(e) {
@@ -182,7 +182,7 @@ $(document).ready(function() {
             setTimeout(function() {
                 $('.thanks').fadeOut('slow');
             }, 2500);
-            // dataLayer.push({ 'event': $(this).parent().closest('.modal').attr('id') });
+
         });
     });
     var modalOnTimer = setTimeout(function() {
