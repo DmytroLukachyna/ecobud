@@ -1,22 +1,22 @@
 .list {
-    list-style-type: none;
-    padding-left: 110px;
-    &-item {
-        font-size: 18px;
-        line-height: 30px;
-        position: relative;
-        &:before {
-            position: absolute;
-            content: '';
-            width: 7px;
-            height: 7px;
-            border: 2px solid rgb(141, 199, 61);
-            left: -15px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
+  list-style-type: none;
+  padding-left: 110px;
+  &-item {
+    font-size: 18px;
+    line-height: 30px;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      width: 7px;
+      height: 7px;
+      border: 2px solid rgb(141, 199, 61);
+      left: -15px;
+      top: 50%;
+      transform: translateY(-50%);
     }
-    &_light {
-        color: rgb(255, 255, 255);
-    }
+  }
+  &_light {
+    color: rgb(255, 255, 255);
+  }
 }

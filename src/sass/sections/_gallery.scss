@@ -1,91 +1,91 @@
 .gallery {
-    position: relative;
-    bottom: 130px;
-    padding: 165px 0 190px 0;
-    background: url("../img/gallery_bg.png") no-repeat 50%/cover;
-    &__wrapper-title {
+  position: relative;
+  bottom: 130px;
+  padding: 165px 0 190px 0;
+  background: url('../img/gallery_bg.png') no-repeat 50% / cover;
+  &__wrapper-title {
+    display: flex;
+  }
+  &__subtitle {
+    font-size: 14px;
+    line-height: 22px;
+    color: rgb(167, 169, 176);
+    padding-top: 56px;
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  &__item {
+    width: 264px;
+    margin: 20px 20px 20px 0;
+    &-picture {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+      &-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(0, 0, 0);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.15s ease-in-out;
+      }
+      &:hover {
+        .gallery__item-picture-btn {
+          visibility: visible;
+          opacity: 1;
+        }
+        .gallery__item-picture-img {
+          transform: scale(1.1);
+        }
+        .gallery__item-picture-overlay {
+          visibility: visible;
+          opacity: 0.25;
+          transform: scale(1.1);
+        }
+      }
+      &-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.35s ease-in-out;
+      }
+      &-btn {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 188px;
+        height: 50px;
+        border: 3px solid rgb(141, 199, 61);
         display: flex;
-    }
-    &__subtitle {
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
         font-size: 14px;
-        line-height: 22px;
-        color: rgb(167, 169, 176);
-        padding-top: 56px;
-    }
-    &__items {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 50px;
-    }
-    &__item {
-        width: 264px;
-        margin: 20px 20px 20px 0;
-        &-picture {
-            display: block;
-            position: relative;
-            width: 100%;
-            height: 300px;
-            overflow: hidden;
-            &-overlay {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: rgb(0, 0, 0);
-                opacity: 0;
-                visibility: hidden;
-                transition: all .15s ease-in-out;
-            }
-            &:hover {
-                .gallery__item-picture-btn {
-                    visibility: visible;
-                    opacity: 1;
-                }
-                .gallery__item-picture-img {
-                    transform: scale(1.1);
-                }
-                .gallery__item-picture-overlay {
-                    visibility: visible;
-                    opacity: .25;
-                    transform: scale(1.1);
-                }
-            }
-            &-img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: all .35s ease-in-out;
-            }
-            &-btn {
-                position: absolute;
-                bottom: 30px;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 188px;
-                height: 50px;
-                border: 3px solid rgb(141, 199, 61);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-weight: 600;
-                font-size: 14px;
-                text-transform: uppercase;
-                color: rgb(255, 255, 255);
-                z-index: 1;
-                visibility: hidden;
-                opacity: 0;
-                transition: all .15s ease-in-out;
-                &:hover {
-                    background: rgb(141, 199, 61);
-                }
-            }
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+        z-index: 1;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.15s ease-in-out;
+        &:hover {
+          background: rgb(141, 199, 61);
         }
-        &-text {
-            font-size: 17px;
-            font-weight: 600;
-            color: rgb(255, 255, 255);
-            margin-top: 20px;
-        }
+      }
     }
+    &-text {
+      font-size: 17px;
+      font-weight: 600;
+      color: rgb(255, 255, 255);
+      margin-top: 20px;
+    }
+  }
 }

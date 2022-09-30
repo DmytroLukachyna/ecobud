@@ -1,36 +1,36 @@
 .tenders {
-    background: rgb(46, 50, 62);
-    padding-top: 100px;
-    padding-bottom: 70px;
-    &__wrapper {
-        max-width: 720px;
+  background: rgb(46, 50, 62);
+  padding-top: 100px;
+  padding-bottom: 70px;
+  &__wrapper {
+    max-width: 720px;
+  }
+  &__text {
+    margin-top: 35px;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    max-width: 490px;
+  }
+  &__buttons {
+    max-width: 562px;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 40px;
+    background: rgb(120, 123, 133);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+    &:hover {
+      background: rgb(141, 199, 61);
     }
-    &__text {
-        margin-top: 35px;
-        font-size: 18px;
-        line-height: 30px;
-        color: rgb(255, 255, 255);
-        max-width: 490px;
-    }
-    &__buttons {
-        max-width: 562px;
-        margin-top: 35px;
-        display: flex;
-        justify-content: space-between;
-    }
-    &__button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 18px 40px;
-        background: rgb(120, 123, 133);
-        color: rgb(255, 255, 255);
-        font-weight: 600;
-        font-size: 20px;
-        text-decoration: none;
-        transition: all .15s ease-in-out;
-        &:hover {
-            background: rgb(141, 199, 61);
-        }
-    }
+  }
 }

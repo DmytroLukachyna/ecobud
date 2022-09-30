@@ -12,14 +12,14 @@ $mail = new PHPMailer;
 
 $mail->isSMTP();
 $mail->CharSet = 'utf-8'; 
-$mail->Host = 'smtp.ukr.net';
+$mail->Host = 'smtp.post.box';
 $mail->SMTPAuth = true;
-$mail->Username = 'web.development@ukr.net';
+$mail->Username = 'email@addre.ss';
 $mail->Password = 'passdeletedandrevoked';
 $mail->SMTPSecure = 'ssl';
 $mail->Port = 465;
-$mail->setFrom('web.development@ukr.net', 'Экобуд');
-$mail->addAddress('web.development@ukr.net');
+$mail->setFrom('email@addre.ss', 'Экобуд');
+$mail->addAddress('email@addre.ss');
 
 // Прикрепление файлов
   for ($ct = 0; $ct < count($_FILES['userfile']['tmp_name']); $ct++) {

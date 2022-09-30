@@ -1,1 +1,1 @@
-https://dmytrolukachyna.github.io/projects/ecobud/
+https://dmytrolukachyna.pp.ua/projects/commercial/ecobud/

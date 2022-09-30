@@ -1,49 +1,49 @@
 .questions {
-    padding-top: 170px;
-    padding-bottom: 240px;
-    background: url("../img/questions_bg.png") no-repeat center/cover;
-    &__wrapper {
-        display: flex;
+  padding-top: 170px;
+  padding-bottom: 240px;
+  background: url('../img/questions_bg.png') no-repeat center/cover;
+  &__wrapper {
+    display: flex;
+  }
+  &__phone {
+    position: relative;
+    width: 500px;
+    &-img {
+      position: absolute;
+      top: 0;
+      right: -30px;
     }
-    &__phone {
-        position: relative;
-        width: 500px;
-        &-img {
-            position: absolute;
-            top: 0;
-            right: -30px;
-        }
+  }
+  &__content {
+    padding-top: 15px;
+  }
+  &__list {
+    margin-top: 40px;
+  }
+  &__text {
+    margin-top: 40px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    color: rgb(255, 255, 255);
+  }
+  &__button {
+    max-width: 227px;
+    margin-top: 40px;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(141, 199, 61);
+    background: rgb(141, 199, 61);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+    &:hover {
+      background: transparent;
+      color: rgb(141, 199, 61);
     }
-    &__content {
-        padding-top: 15px;
-    }
-    &__list {
-        margin-top: 40px;
-    }
-    &__text {
-        margin-top: 40px;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 34px;
-        color: rgb(255, 255, 255);
-    }
-    &__button {
-        max-width: 227px;
-        margin-top: 40px;
-        padding: 18px 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 3px solid rgb(141, 199, 61);
-        background: rgb(141, 199, 61);
-        color: rgb(255, 255, 255);
-        font-weight: 600;
-        font-size: 20px;
-        text-decoration: none;
-        transition: all .15s ease-in-out;
-        &:hover {
-            background: transparent;
-            color: rgb(141, 199, 61);
-        }
-    }
+  }
 }

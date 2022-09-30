@@ -1,157 +1,157 @@
 .modal {
-    display: none;
-    padding: 70px 95px;
-    &__subtitle {
-        margin-top: 20px;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 28px;
-        color: rgb(120, 123, 133);
-        &_short {
-            max-width: 420px;
-        }
+  display: none;
+  padding: 70px 95px;
+  &__subtitle {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgb(120, 123, 133);
+    &_short {
+      max-width: 420px;
     }
-    &__links {
-        margin-top: 30px;
-        max-width: 110px;
-        display: flex;
-        justify-content: space-between;
-    }
-    &__link {
-        width: 50px;
-        height: 50px;
-        background: rgb(141, 199, 61);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    &__form {
-        margin-top: 20px;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        #userfile,
-        #userfile_tender {
-            display: none;
-        }
-    }
-    input {
-        background: rgb(238, 240, 244);
-        height: 60px;
-        width: 264px;
-        padding: 18px;
-        font-size: 14px;
-        color: rgb(167, 169, 176);
-        border: 3px solid rgb(238, 240, 244);
-        transition: all .15s ease-in-out;
-        margin-top: 30px;
-        &:focus {
-            outline: none;
-            border: 3px solid rgb(141, 199, 61);
-        }
-        /*  */
-    }
-    &__button {
-        margin-top: 50px;
-        /* width: 183px; */
-        padding: 18px 40px;
-        background: rgb(141, 199, 61);
-        border: 3px solid rgb(141, 199, 61);
-        cursor: pointer;
-        font-weight: 600;
-        font-size: 20px;
-        color: rgb(255, 255, 255);
-        transition: all .15s ease-in-out;
-        &:hover {
-            background: transparent;
-            color: rgb(141, 199, 61);
-        }
-    }
-    &__email {
-        color: rgb(141, 199, 61);
-        text-decoration: none;
-        font-weight: 500;
-    }
-}
-
-.form__wrapper {
+  }
+  &__links {
+    margin-top: 30px;
+    max-width: 110px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.input__file {
-    width: 264px;
-    height: 60px;
+  }
+  &__link {
+    width: 50px;
+    height: 50px;
+    background: rgb(141, 199, 61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    #userfile,
+    #userfile_tender {
+      display: none;
+    }
+  }
+  input {
     background: rgb(238, 240, 244);
+    height: 60px;
+    width: 264px;
     padding: 18px;
     font-size: 14px;
     color: rgb(167, 169, 176);
     border: 3px solid rgb(238, 240, 244);
-    transition: all .15s ease-in-out;
+    transition: all 0.15s ease-in-out;
     margin-top: 30px;
+    &:focus {
+      outline: none;
+      border: 3px solid rgb(141, 199, 61);
+    }
+    /*  */
+  }
+  &__button {
+    margin-top: 50px;
+    /* width: 183px; */
+    padding: 18px 40px;
+    background: rgb(141, 199, 61);
+    border: 3px solid rgb(141, 199, 61);
     cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    transition: all 0.15s ease-in-out;
     &:hover {
-        outline: none;
-        border: 3px solid rgb(141, 199, 61);
+      background: transparent;
+      color: rgb(141, 199, 61);
     }
-    &_loaded {
-        border: 3px solid rgb(141, 199, 61);
-        background: rgb(141, 199, 61);
-        color: rgb(255, 255, 255);
-    }
+  }
+  &__email {
+    color: rgb(141, 199, 61);
+    text-decoration: none;
+    font-weight: 500;
+  }
+}
+
+.form__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.input__file {
+  width: 264px;
+  height: 60px;
+  background: rgb(238, 240, 244);
+  padding: 18px;
+  font-size: 14px;
+  color: rgb(167, 169, 176);
+  border: 3px solid rgb(238, 240, 244);
+  transition: all 0.15s ease-in-out;
+  margin-top: 30px;
+  cursor: pointer;
+  &:hover {
+    outline: none;
+    border: 3px solid rgb(141, 199, 61);
+  }
+  &_loaded {
+    border: 3px solid rgb(141, 199, 61);
+    background: rgb(141, 199, 61);
+    color: rgb(255, 255, 255);
+  }
 }
 
 #modal_calculate {
-    &_1 {
-        max-width: 754px;
-    }
-    &_2 {
-        max-width: 754px;
-    }
+  &_1 {
+    max-width: 754px;
+  }
+  &_2 {
+    max-width: 754px;
+  }
 }
 
 .fancybox-button {
-    width: 54px;
-    height: 54px;
-    svg {
-        width: 34px;
-        height: 34px;
-        path {
-            fill: rgb(58, 62, 64);
-        }
+  width: 54px;
+  height: 54px;
+  svg {
+    width: 34px;
+    height: 34px;
+    path {
+      fill: rgb(58, 62, 64);
     }
+  }
 }
 
 .thanks {
-    display: none;
-    &__overlay {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background: rgba(30, 30, 30, .9);
-        z-index: 99999;
+  display: none;
+  &__overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(30, 30, 30, 0.9);
+    z-index: 99999;
+  }
+  &__message {
+    z-index: 100000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    min-height: 100px;
+    font-size: 20px;
+    background: rgb(141, 199, 61);
+    opacity: 0.85;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    span {
+      font-size: 30px;
+      font-weight: 600;
     }
-    &__message {
-        z-index: 100000;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 380px;
-        min-height: 100px;
-        font-size: 20px;
-        background: rgb(141, 199, 61);
-        opacity: 0.85;
-        color: rgb(255, 255, 255);
-        border-radius: 10px;
-        padding: 30px;
-        text-align: center;
-        span {
-            font-size: 30px;
-            font-weight: 600;
-        }
-    }
+  }
 }
